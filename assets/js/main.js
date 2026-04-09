@@ -147,7 +147,7 @@ const scrollActive = () => {
     if (!link) return;
     link.classList.toggle(
       "active-link",
-      scrollY > top && scrollY <= top + height
+      scrollY > top && scrollY <= top + height,
     );
   });
 };
@@ -195,7 +195,7 @@ const sr = ScrollReveal({
 
 //home, project and work section animations
 sr.reveal(
-  `.home__image, .projects__container, .work__container, .testimonials__container, .contact__container`
+  `.home__image, .projects__container, .work__container, .testimonials__container, .contact__container`,
 );
 sr.reveal(`.home__data`, { delay: 900, origin: "bottom" });
 sr.reveal(`.home__info`, { delay: 1200, origin: "bottom" });
